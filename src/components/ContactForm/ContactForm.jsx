@@ -2,8 +2,9 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import style from "./ContactForm.module.css";
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactSlice";
+// import { addContact } from "../../redux/contactSlice";
 import { nanoid } from "nanoid";
+import { addContact } from "../../redux/contactsOps";
 
 const TEXT_BTN_FORM = "Add contact";
 

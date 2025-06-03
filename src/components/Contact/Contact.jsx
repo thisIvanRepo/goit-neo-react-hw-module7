@@ -2,7 +2,7 @@ import React from "react";
 import { FaRegUser, FaPhone } from "react-icons/fa";
 import style from "./Contact.module.css";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactSlice";
+import { deleteContact } from "../../redux/contactsOps";
 
 const DELETE_TEXT = "Delete";
 
@@ -10,7 +10,7 @@ const Contat = ({ contact }) => {
   const dispatch = useDispatch();
 
   const handleDeleteContact = (id) => {
-    dispatch(deleteContact({ id }));
+    dispatch(deleteContact(id));
   };
 
   return (
